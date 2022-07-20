@@ -8,8 +8,14 @@
     <title>laravel_extends_yield_exo_1</title>
 </head>
 <body>
-    <header></header>
-    <main></main>
-    <footer></footer>
+    <header>
+        @include("partial.header")
+    </header>
+    <main>
+        @yield("content")
+    </main>
+    <footer>
+        @include("partial.footer")
+    </footer>
 </body>
 </html>
